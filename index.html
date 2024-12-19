@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--HEADER MENU-->
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Edu{}</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--HOME-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img src="img/perfil.png" alt="Profile photo">
+            </div>
+            <h1>EDUARD GARCÍA GUILLÉN</h1>
+            <h2>Programming Student</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/CodeByEdd"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT ME-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hello,I'm Eduard García Guillén</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, ipsam libero voluptates veritatis aut soluta architecto, fugiat similique necessitatibus harum, molestiae qui? Voluptatibus delectus ex cupiditate odit quasi quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio fugit, repellendus voluptate pariatur officia assumenda quia ut at beatae nobis est incidunt ex, delectus perferendis totam! Corporis amet harum et?</p>
+
+            <div class="fila">
+                <!--Datos personales-->
+                <dic class="col">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            27-06-2000
+                        </li>
+                        <li>
+                            <strong>Phone Number</strong>
+                            662 17 27 27
+                        </li>
+                        <li>
+                            <strong>Mail</strong>
+                            garciaguilleneduard@gmail.com
+                        </li>
+                        <li>
+                            <strong>Direcction</strong>
+                            Tarragona, Catalonia, Spain
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.exemple.com
+                        </li>
+                        <li>
+                            <strong>Position</strong>
+                            Student
+                        </li>
+                    </ul>
+                </dic>
+            </div>
+            <button>Download CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <div class="conteido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <!--Technical-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <i class="fa-brands fa-java fa-2x"></i>
+                        <Span>Java</Span>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-html5 fa-2x"></i>
+                        <Span>HTML</Span>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-css3-alt fa-2x"></i>
+                        <Span>CSS</Span>
+                    </div>
+                </div>
+                <!--Professional Skills-->
+                <div class="col" id="col2">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <i class="fa-solid fa-user-plus fa-2x"></i>
+                        <Span>Team Wock</Span>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-comment fa-2x"></i>
+                        <Span>Comunication</Span>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-list-check fa-2x"></i>
+                        <Span>Proyect Managment</Span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CV-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Proyectos-->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Proyects</h2>
+            <div class="galeria">
+                <div class="pro">
+                    <img src="img/aaa.png" alt="">
+                    <div class="overlay">
+                        <h3>Xxxx Xxxxx</h3>
+                        <p>Xxxxxxx</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="img/aaa.png" alt="">
+                    <div class="overlay">
+                        <h3>Xxxx Xxxxx</h3>
+                        <p>Xxxxxxx</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="img/aaa.png" alt="">
+                    <div class="overlay">
+                        <h3>Xxxx Xxxxx</h3>
+                        <p>Xxxxxxx</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="img/aaa.png" alt="">
+                    <div class="overlay">
+                        <h3>Xxxx Xxxxx</h3>
+                        <p>Xxxxxxx</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="img/aaa.png" alt="">
+                    <div class="overlay">
+                        <h3>Xxxx Xxxxx</h3>
+                        <p>Xxxxxxx</p>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="img/aaa.png" alt="">
+                    <div class="overlay">
+                        <h3>Xxxx Xxxxx</h3>
+                        <p>Xxxxxxx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contact</h2>
+            <div class="fila">
+                <!-- Formulario-->
+                 <div class="col">
+                    <form action="">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button>
+                            Send  <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+
+                 </div>
+                 <!--Mapa-->
+                 <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48086.39684071363!2d1.197383829355006!3d41.1257974612789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3fcdbd3ddf159%3A0x920569a71387a3b2!2sTarragona!5e0!3m2!1ses!2ses!4v1734604420592!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
